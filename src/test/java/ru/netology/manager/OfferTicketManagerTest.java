@@ -17,7 +17,7 @@ class OfferTicketManagerTest {
 
     //поиск всех совпадений сортировка по цене
     @Test
-    void searchBySortAllOferrTocket() {
+    void searchBySortAllOfferTicket() {
         repository.save(ot1);
         repository.save(ot2);
         repository.save(ot3);
@@ -33,7 +33,7 @@ class OfferTicketManagerTest {
 
     /// билет отсутствует
     @Test
-    void searchBySortNoOferrTocket() {
+    void searchBySortNoOfferTicket() {
         repository.save(ot1);
         repository.save(ot2);
         repository.save(ot3);
@@ -48,7 +48,7 @@ class OfferTicketManagerTest {
 
     // поиск одного билета
     @Test
-    void searchBySortOneOferrTocket() {
+    void searchBySortOneOfferTicket() {
         repository.save(ot1);
 
         OfferTicketManager managers = new OfferTicketManager(repository);
